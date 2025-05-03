@@ -1,0 +1,142 @@
+[gd_scene load_steps=22 format=3 uid="uid://ccsoabssyn663"]
+
+[ext_resource type="Script" path="res://Scripts/front_page.gd" id="1_hhy7t"]
+[ext_resource type="Texture2D" uid="uid://d07207u5d544h" path="res://FrontPage Assets/bg.png" id="1_rrow3"]
+[ext_resource type="Texture2D" uid="uid://ym3wxenyhfv0" path="res://FrontPage Assets/Syllaquist_Station_1_Syllapick__3_-removebg-preview.png" id="3_3xlxm"]
+[ext_resource type="Texture2D" uid="uid://bxt3tcsjppdjp" path="res://FrontPage Assets/no bg.png" id="4_y3853"]
+[ext_resource type="Texture2D" uid="uid://bybu82adppe7n" path="res://FrontPage Assets/front page_enter name.png" id="5_as71q"]
+[ext_resource type="FontFile" uid="uid://d3ejvk3s0ka1y" path="res://FrontPage Assets/ARCADECLASSIC.TTF" id="6_ge1qm"]
+[ext_resource type="Texture2D" uid="uid://bbf71uwi7jdgg" path="res://FrontPage Assets/Syllaquist_Station_1_Syllapick__24_-removebg-preview.png" id="7_pyspk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wxj62"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gtlyr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_py27n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tfnc3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s8iut"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cimdu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g1nf3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_isavp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cb21u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qvnnw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0s58d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j30tn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7rgeb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kmk77"]
+
+[node name="FrontPage" type="Node2D"]
+script = ExtResource("1_hhy7t")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = -15.0
+offset_top = -18.0
+offset_right = 1124.0
+offset_bottom = 1933.0
+scale = Vector2(0.657111, 0.683716)
+texture = ExtResource("1_rrow3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(363, 724)
+scale = Vector2(1.97375, 1.77113)
+texture = ExtResource("3_3xlxm")
+
+[node name="CloudSpawn" type="Node2D" parent="."]
+
+[node name="CloudTimer" type="Timer" parent="."]
+wait_time = 20.0
+
+[node name="BubbleSpawn" type="Node2D" parent="."]
+
+[node name="BubbleTimer" type="Timer" parent="."]
+
+[node name="GameTitle" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(367, 653)
+scale = Vector2(1.75467, 1.62613)
+texture = ExtResource("4_y3853")
+
+[node name="EnterYourName" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 213.0
+offset_right = 40.0
+offset_bottom = 253.0
+
+[node name="TextureRect" type="TextureRect" parent="EnterYourName"]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 147.0
+offset_right = 600.0
+offset_bottom = 813.0
+texture = ExtResource("5_as71q")
+
+[node name="TextureButton" type="TextureButton" parent="EnterYourName/TextureRect"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 289.0
+offset_right = 447.0
+offset_bottom = 377.0
+
+[node name="LineEdit" type="LineEdit" parent="EnterYourName/TextureRect"]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 293.0
+offset_right = 441.0
+offset_bottom = 364.0
+theme_override_colors/selection_color = Color(0, 0.8, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/caret_width = 2
+theme_override_constants/minimum_character_width = 1
+theme_override_fonts/font = ExtResource("6_ge1qm")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wxj62")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_gtlyr")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_py27n")
+placeholder_text = "Enter Your Name"
+alignment = 1
+max_length = 20
+expand_to_text_length = true
+caret_blink_interval = 0.92
+language = "fil_US"
+
+[node name="PlayButton" type="Button" parent="."]
+offset_left = 530.0
+offset_top = 755.0
+offset_right = 905.0
+offset_bottom = 1421.0
+rotation = 1.5708
+scale = Vector2(0.5, 0.5)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tfnc3")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_s8iut")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_cimdu")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_g1nf3")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_isavp")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_cb21u")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_qvnnw")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_0s58d")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_j30tn")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_7rgeb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_kmk77")
+icon = ExtResource("7_pyspk")
+
+[connection signal="timeout" from="CloudTimer" to="." method="_on_cloud_timer_timeout"]
+[connection signal="timeout" from="BubbleTimer" to="." method="_on_bubble_timer_timeout"]
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]

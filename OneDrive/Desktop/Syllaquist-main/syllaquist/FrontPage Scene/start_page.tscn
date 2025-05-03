@@ -1,0 +1,166 @@
+[gd_scene load_steps=22 format=3 uid="uid://b4h0hayip75ca"]
+
+[ext_resource type="Script" path="res://Scripts/start_page.gd" id="1_1whjk"]
+[ext_resource type="Texture2D" uid="uid://d07207u5d544h" path="res://FrontPage Assets/bg.png" id="1_jhcra"]
+[ext_resource type="Texture2D" uid="uid://bvopv6b0jwlr3" path="res://StartPage Assets/Syllaquist_Station_1_Syllapick__11_-removebg-preview.png" id="2_7jqqb"]
+[ext_resource type="Texture2D" uid="uid://dh7vo8ymncht5" path="res://StartPage Assets/Syllaquist_Station_1_Syllapick__5_-removebg-preview.png" id="3_5ux7v"]
+[ext_resource type="Texture2D" uid="uid://cjfw7raphdq05" path="res://StartPage Assets/Syllaquist_Station_1_Syllapick__17_-removebg-preview.png" id="4_v2gd4"]
+[ext_resource type="Texture2D" uid="uid://dhi2spxftghvp" path="res://StartPage Assets/Syllaquist_Station_1_Syllapick__26_-removebg-preview.png" id="5_mx7qr"]
+[ext_resource type="Texture2D" uid="uid://dskff7pdlxm4c" path="res://StartPage Assets/Syllaquist_Station_1_Syllapick__29_-removebg-preview.png" id="6_d2bh7"]
+[ext_resource type="Texture2D" uid="uid://boy3ghtph27mi" path="res://StartPage Assets/Syllaquist_Station_1_Syllapick__28_-removebg-preview.png" id="8_keyjl"]
+[ext_resource type="Texture2D" uid="uid://cvdrwefwm4acf" path="res://StartPage Assets/Syllaquist_Station_1_Syllapick__13_-removebg-preview.png" id="9_1ilas"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bfe7j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qnm4c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pv0v0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wgs5x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tqbrl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_anlyi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hyudo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ngv67"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8o3le"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_frm6p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fdswk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v5li5"]
+radius = 2.0
+
+[node name="StartPage" type="Node2D"]
+script = ExtResource("1_1whjk")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 730.0
+offset_bottom = 1287.0
+texture = ExtResource("1_jhcra")
+expand_mode = 1
+
+[node name="Ground" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.886275)
+texture_filter = 1
+position = Vector2(369, 1287)
+scale = Vector2(2.83333, 1.997)
+texture = ExtResource("2_7jqqb")
+
+[node name="Stone" type="Sprite2D" parent="."]
+position = Vector2(62, 1041)
+scale = Vector2(0.8, 0.746)
+texture = ExtResource("3_5ux7v")
+
+[node name="Tree" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.854902)
+texture_filter = 1
+position = Vector2(699, 934)
+scale = Vector2(1.00733, 1.08964)
+texture = ExtResource("4_v2gd4")
+
+[node name="Basket" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.74902)
+texture_filter = 1
+position = Vector2(616, 1158)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_d2bh7")
+
+[node name="Apples_Container" type="CanvasLayer" parent="."]
+
+[node name="apples" type="Sprite2D" parent="Apples_Container"]
+modulate = Color(1, 1, 1, 0.756863)
+texture_filter = 1
+position = Vector2(562, 869)
+rotation = -0.349066
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_mx7qr")
+
+[node name="apples2" type="Sprite2D" parent="Apples_Container"]
+modulate = Color(1, 1, 1, 0.756863)
+texture_filter = 1
+position = Vector2(643, 829)
+rotation = -0.174533
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_mx7qr")
+
+[node name="apples3" type="Sprite2D" parent="Apples_Container"]
+modulate = Color(1, 1, 1, 0.756863)
+texture_filter = 1
+position = Vector2(688, 893)
+rotation = 0.174533
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_mx7qr")
+
+[node name="apples4" type="Sprite2D" parent="Apples_Container"]
+modulate = Color(1, 1, 1, 0.756863)
+texture_filter = 1
+position = Vector2(597, 948)
+rotation = 0.174533
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_mx7qr")
+
+[node name="apples5" type="Sprite2D" parent="Apples_Container"]
+modulate = Color(1, 1, 1, 0.756863)
+texture_filter = 1
+position = Vector2(674, 972)
+rotation = 0.349066
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_mx7qr")
+
+[node name="apples6" type="Sprite2D" parent="Apples_Container"]
+modulate = Color(1, 1, 1, 0.756863)
+texture_filter = 1
+position = Vector2(627, 1023)
+rotation = 0.174533
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_mx7qr")
+
+[node name="CloudSpawn" type="Node2D" parent="."]
+
+[node name="CloudTimer" type="Timer" parent="."]
+wait_time = 20.0
+
+[node name="BubbleSpawn" type="Node2D" parent="."]
+
+[node name="BubbleTimer" type="Timer" parent="."]
+
+[node name="StartGameTitle" type="Sprite2D" parent="."]
+position = Vector2(342, 384)
+rotation = 1.5708
+texture = ExtResource("8_keyjl")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = -1
+offset_left = 212.0
+offset_top = 368.0
+offset_right = 587.0
+offset_bottom = 1034.0
+scale = Vector2(0.8, 0.8)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_bfe7j")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_qnm4c")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_pv0v0")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_wgs5x")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_tqbrl")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_anlyi")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_hyudo")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_ngv67")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8o3le")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_frm6p")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fdswk")
+icon = ExtResource("9_1ilas")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Button"]
+position = Vector2(178.75, 360)
+scale = Vector2(29.25, 33.75)
+shape = SubResource("CircleShape2D_v5li5")
+
+[connection signal="timeout" from="CloudTimer" to="." method="_on_cloud_timer_timeout"]
+[connection signal="timeout" from="BubbleTimer" to="." method="_on_bubble_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button/TouchScreenButton" to="." method="_on_button_pressed"]

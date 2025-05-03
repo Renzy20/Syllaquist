@@ -1,0 +1,211 @@
+[gd_scene load_steps=23 format=3 uid="uid://cf271q2oi588s"]
+
+[ext_resource type="Script" path="res://Scripts/how_to_play_page.gd" id="1_y1iao"]
+[ext_resource type="Texture2D" uid="uid://d07207u5d544h" path="res://FrontPage Assets/bg.png" id="2_gyc3i"]
+[ext_resource type="Texture2D" uid="uid://bvopv6b0jwlr3" path="res://StartPage Assets/Syllaquist_Station_1_Syllapick__11_-removebg-preview.png" id="3_s772l"]
+[ext_resource type="Texture2D" uid="uid://dh7vo8ymncht5" path="res://StartPage Assets/Syllaquist_Station_1_Syllapick__5_-removebg-preview.png" id="4_o7oyx"]
+[ext_resource type="Texture2D" uid="uid://cjfw7raphdq05" path="res://StartPage Assets/Syllaquist_Station_1_Syllapick__17_-removebg-preview.png" id="5_koywi"]
+[ext_resource type="Texture2D" uid="uid://dskff7pdlxm4c" path="res://StartPage Assets/Syllaquist_Station_1_Syllapick__29_-removebg-preview.png" id="6_revub"]
+[ext_resource type="Texture2D" uid="uid://dhi2spxftghvp" path="res://StartPage Assets/Syllaquist_Station_1_Syllapick__26_-removebg-preview.png" id="7_ql5sc"]
+[ext_resource type="Texture2D" uid="uid://djsvsm2yuya3x" path="res://StartPage Assets/Syllaquist_Station_1_Syllapick__18_-removebg-preview.png" id="8_iahw6"]
+[ext_resource type="FontFile" uid="uid://d3ejvk3s0ka1y" path="res://FrontPage Assets/ARCADECLASSIC.TTF" id="9_7wkl6"]
+[ext_resource type="Texture2D" uid="uid://dtoj0swhlq11g" path="res://StartPage Assets/PlayButton-Photoroom.png" id="10_uej18"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iy6ah"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7fl67"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_24gyk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_trpoj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1anhy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oq08a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4i8xr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ph7n0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r617r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u2hcq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qak4n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h016x"]
+size = Vector2(600, 200)
+
+[node name="HowToPlayPage" type="Node2D"]
+script = ExtResource("1_y1iao")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 730.0
+offset_bottom = 1287.0
+texture = ExtResource("2_gyc3i")
+expand_mode = 1
+
+[node name="Ground" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.886275)
+texture_filter = 1
+position = Vector2(369, 1287)
+scale = Vector2(2.83333, 1.997)
+texture = ExtResource("3_s772l")
+
+[node name="Stone" type="Sprite2D" parent="."]
+position = Vector2(62, 1041)
+scale = Vector2(0.8, 0.746)
+texture = ExtResource("4_o7oyx")
+
+[node name="Tree" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.854902)
+texture_filter = 1
+position = Vector2(699, 934)
+scale = Vector2(1.00733, 1.08964)
+texture = ExtResource("5_koywi")
+
+[node name="Basket" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.74902)
+texture_filter = 1
+position = Vector2(616, 1158)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_revub")
+
+[node name="Apples_Container" type="CanvasLayer" parent="."]
+
+[node name="apples" type="Sprite2D" parent="Apples_Container"]
+modulate = Color(1, 1, 1, 0.756863)
+texture_filter = 1
+position = Vector2(562, 869)
+rotation = -0.349066
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("7_ql5sc")
+
+[node name="apples2" type="Sprite2D" parent="Apples_Container"]
+modulate = Color(1, 1, 1, 0.756863)
+texture_filter = 1
+position = Vector2(643, 829)
+rotation = -0.174533
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("7_ql5sc")
+
+[node name="apples3" type="Sprite2D" parent="Apples_Container"]
+modulate = Color(1, 1, 1, 0.756863)
+texture_filter = 1
+position = Vector2(688, 893)
+rotation = 0.174533
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("7_ql5sc")
+
+[node name="apples4" type="Sprite2D" parent="Apples_Container"]
+modulate = Color(1, 1, 1, 0.756863)
+texture_filter = 1
+position = Vector2(597, 948)
+rotation = 0.174533
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("7_ql5sc")
+
+[node name="apples5" type="Sprite2D" parent="Apples_Container"]
+modulate = Color(1, 1, 1, 0.756863)
+texture_filter = 1
+position = Vector2(674, 972)
+rotation = 0.349066
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("7_ql5sc")
+
+[node name="apples6" type="Sprite2D" parent="Apples_Container"]
+modulate = Color(1, 1, 1, 0.756863)
+texture_filter = 1
+position = Vector2(627, 1023)
+rotation = 0.174533
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("7_ql5sc")
+
+[node name="apples7" type="Sprite2D" parent="Apples_Container"]
+modulate = Color(1, 1, 1, 0.756863)
+texture_filter = 1
+position = Vector2(596, 1126)
+rotation = 0.174533
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("7_ql5sc")
+
+[node name="apples8" type="Sprite2D" parent="Apples_Container"]
+modulate = Color(1, 1, 1, 0.756863)
+texture_filter = 1
+position = Vector2(637, 1124)
+rotation = -0.349066
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("7_ql5sc")
+
+[node name="apples9" type="Sprite2D" parent="Apples_Container"]
+modulate = Color(1, 1, 1, 0.756863)
+texture_filter = 1
+position = Vector2(617, 1124)
+rotation = 0.349066
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("7_ql5sc")
+
+[node name="CloudSpawn" type="Node2D" parent="."]
+
+[node name="CloudTimer" type="Timer" parent="."]
+wait_time = 20.0
+
+[node name="DescriptionContainer" type="Sprite2D" parent="."]
+position = Vector2(365, 571)
+scale = Vector2(1.94667, 1.82643)
+texture = ExtResource("8_iahw6")
+
+[node name="HowtoPlay" type="Label" parent="DescriptionContainer"]
+texture_filter = 1
+offset_left = -140.0
+offset_top = -192.778
+offset_right = 143.0
+offset_bottom = -135.778
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_7wkl6")
+theme_override_font_sizes/font_size = 42
+text = "HOW TO PLAY:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="description" type="Label" parent="DescriptionContainer"]
+offset_left = -140.0
+offset_top = -136.0
+offset_right = 143.0
+offset_bottom = 65.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_7wkl6")
+theme_override_font_sizes/font_size = 16
+text = "Take a moment to read the words on each apple carefully. Pick the apples with the monosyllabic words and drag them towards the basket. Fill the basket with five (5) apples to get the key for the next station!
+
+Note: Be careful because you will lose a life for every mistake!"
+horizontal_alignment = 3
+vertical_alignment = 1
+autowrap_mode = 2
+justification_flags = 139
+
+[node name="Button" type="Button" parent="."]
+offset_left = 258.0
+offset_top = 793.0
+offset_right = 993.0
+offset_bottom = 1091.0
+scale = Vector2(0.3, 0.3)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_iy6ah")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_7fl67")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_24gyk")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_trpoj")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_1anhy")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_oq08a")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4i8xr")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_ph7n0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_r617r")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_u2hcq")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qak4n")
+icon = ExtResource("10_uej18")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Button"]
+position = Vector2(363.333, 146.667)
+shape = SubResource("RectangleShape2D_h016x")
+
+[connection signal="timeout" from="CloudTimer" to="." method="_on_cloud_timer_timeout"]
